@@ -1,0 +1,12 @@
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null",
+    "Agendamentos": {
+      ".indexOn": "dataTimestamp"
+    },
+    "Atendidos": {
+      ".indexOn": ["id","atendente"]
+    }
+  }
+}
